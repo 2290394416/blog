@@ -1,0 +1,83 @@
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width:980px) {
+  .app{
+    min-width: 980px;
+  }  
+}
+.app {
+  background: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content {
+  width: 980px;
+  display: flex;
+}
+.content-left {
+  width: 160px;
+  text-align: center;
+}
+.content .logo {
+  width: 160px;
+  height: 76px;
+  line-height: 76px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.content-left .item {
+  height: 44px;
+  line-height: 44px;
+  background: skyblue;
+  padding: 10px 0;
+  animation: animate 8s linear infinite;
+  transition: width 1s linear 2s;
+}
+.content-left .item:hover {
+  background: -webkit-linear-gradient(left,#fff,skyblue,#fff);
+  background-size: 400%;
+}
+@keyframes animate {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+.content-right .main {
+  margin-left: 20px;
+}
+.content-right .item-box {
+  margin-top: 76px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding-top: 20px;
+}
+.footer .load {
+  width: 980px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F011b3b599a3c2800000021294fa0aa.gif&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627030789&t=56968989a2d2fc09ccfa8977389dda9b) no-repeat;
+  background-size: 100px;
+  background-position: 370px -25px;
+}
+.footer img {
+  height: 50px;
+}

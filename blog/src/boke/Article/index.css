@@ -1,0 +1,24 @@
+
+.item-box .article {
+  margin-left: 20px;
+}
+.item-box .article-a {
+  margin: 20px 10px;
+  display: block;
+  width: 770px;
+  margin-left: 20px;
+  color: #222;
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0,0,0,20%);
+  transition: all 0.5s;
+}
+.item-box .article-a:hover {
+  color: #807a7a9c;
+  box-shadow: 1px 2px 5px 1px rgba(0,0,0,20%);
+}
+.item-box .synopsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
