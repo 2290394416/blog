@@ -2,12 +2,7 @@ import React from 'react';
 import Article from './Article';
 import './index.css';
 
-
 export default function Blog() {
-  const main = document.querySelector('.main');
-  const big = document.querySelector('.big');
-  const box = document.querySelector('.item-box');
-
   function fristclick() {
     main.innerHTML = < Article />;
   }
