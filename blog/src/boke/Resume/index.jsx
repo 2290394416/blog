@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index.css'
 
 
 class Resume extends React.Component {
@@ -8,6 +8,10 @@ class Resume extends React.Component {
 
   }
   render() {
-    return (<div className="resume">个人简历</div>)
+    return (<div className="item-box">
+      <h1 className="resume">个人简历</h1>
+      <div className="introduce">简介</div>
+    </div>)
   }
 }
+export default Resume;

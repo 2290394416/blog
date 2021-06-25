@@ -1,13 +1,19 @@
-import React from 'react';
-import Article from './Article';
+import React, { useState } from 'react';
+import Article from './Article/index';
+import Resume from './Resume/index';
 import './index.css';
 
 export default function Blog() {
+
+  const [isArticle, setArticle] = useState(true);
+  const [isResume, setResume] = useState(false);
   function fristclick() {
-    main.innerHTML = < Article />;
+    setArticle(true);
+    setResume(false)
   }
   function secondclick() {
-    main.innerhtml = 111
+    setArticle(false);
+    setResume(true)
   }
 
   return (
@@ -24,7 +30,8 @@ export default function Blog() {
         </div>
         <div className="content-right">
           <div className="main">
-            <Article />
+            {isArticle ? <Article /> : null}
+            {isResume ? <Resume /> : null}
           </div>
         </div>
       </div>
