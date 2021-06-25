@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Article from './Article';
+import Resume from './Resume'
 import './index.css';
 
+// 数据驱动视图/UI user interface
+
 export default function Blog() {
-  function fristclick() {
-    main.innerHTML = < Article />;
-  }
+  const [isArticle, setArticle] = useState(true)
+  const [isResume, setResume] = useState(false)
+
   function secondclick() {
-    main.innerhtml = 111
+    setArticle(false)
+    setResume(true)
   }
 
   return (
@@ -24,7 +28,8 @@ export default function Blog() {
         </div>
         <div className="content-right">
           <div className="main">
-            <Article />
+            {isArticle ? <Article /> : null}
+            {isResume ? <Resume /> : null}
           </div>
         </div>
       </div>
