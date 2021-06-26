@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Article from './Article/index';
 import Resume from './Resume/index';
+
 import './index.css';
+
+// 数据驱动视图/UI user interface
 
 export default function Blog() {
 
